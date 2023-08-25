@@ -1,24 +1,21 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import Header from './Components/Header/Header'
+import Button from "./Components/Button"
+
 
 function App() {
+  const title = "Hello from app"
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+    <Header></Header>
+      <div>
+        <img className="App" src="" alt="" />
+      </div>
+      <h1 className="App">{title}</h1>
+      <h1 className="App">{title.toUpperCase()}</h1>
+      <p>jfjfjfj</p>
+      <Button text="Click du Parent"></Button>
+    </>
   );
 }
 
